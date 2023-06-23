@@ -1,0 +1,5 @@
+echo "(*) Downloading SuperSU!"
+wget https://download.chainfire.eu/1220/SuperSU/SR5-SuperSU-v2.82-SR5-20171001224502.zip?retrieve_file=1 -q
+mv SR5-SuperSU* downloads/supersu.zip
+echo "(!) Downloaded SuperSU to downloads/supersu.zip!"
+echo "Move this onto your SD card"

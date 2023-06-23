@@ -1,10 +1,24 @@
 #!/bin/bash
 echo "CWM Standalone Launcher Trigger $1 selected"
+rm -rf downloads/ platform-tools/
+mkdir downloads
+read -p "(?) Would you like to download SuperSU? > " yn
+case $yn in
+    [Yy]* )
+        ./supersu
+    ;;
+    [Nn]* )
+        echo "(*) Not downloading SuperSU."
+    ;;
+    * )
+        echo "(*) Not downloading SuperSU."
+    ;;
+esac
 echo "(*) Downloading platform-tools"
-rm -rf platform-tool*
 wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip -q
+mv platform-tools-latest-linux.zip downloads/
 echo "(!) Downloaded platform-tools"
-unzip platform-tools-latest-linux.zip
+unzip downloads/platform-tools-latest-linux.zip 
 echo "(!) Unzipped platform-tools"
 echo "(*) Starting ADB.."
 ./platform-tools/adb kill-server
