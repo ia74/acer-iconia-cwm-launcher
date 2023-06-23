@@ -1,4 +1,4 @@
-# acer-cwm-launcher
+# acer-iconia-cwm-launcher
 
 [Original AndroidForums post can be found here](https://androidforums.com/threads/how-to-root-a1-860.1014590)
 
