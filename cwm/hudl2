@@ -1,0 +1,5 @@
+#!/bin/bash
+./fastboot -i 0x1d4d flash /tmp/recovery.zip ./recovery.zip
+./fastboot -i 0x1d4d flash /tmp/recovery.launcher ./recovery.launcher
+./fastboot -i 0x1d4d flash /sbin/partlink ./fbrl.trigger  
+./fastboot -i 0x1d4d oem stop_partitioning
