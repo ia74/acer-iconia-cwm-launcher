@@ -18,7 +18,7 @@ echo "(*) Downloading platform-tools"
 wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip -q
 mv platform-tools-latest-linux.zip downloads/
 echo "(!) Downloaded platform-tools"
-unzip downloads/platform-tools-latest-linux.zip 
+unzip -q downloads/platform-tools-latest-linux.zip 
 echo "(!) Unzipped platform-tools"
 echo "(*) Starting ADB.."
 ./platform-tools/adb kill-server
